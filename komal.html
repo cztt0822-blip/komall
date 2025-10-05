@@ -161,10 +161,10 @@ function createButtons(containerId, keys, isExtra=false, insertId="", lineBreakC
 // 建立按鍵
 createButtons("season-buttons", seasonKeys,false,"season-insert",5);
 createButtons("season-extra", seasonExtraKeys,true);
-createButtons("special-buttons", specialPackKeys,false,"special-insert",4);
-createButtons("season-pack-buttons", seasonPackKeys,false,"season-pack-insert",4);
+createButtons("special-buttons", specialPackKeys,false,"special-insert",200);
+createButtons("season-pack-buttons", seasonPackKeys,false,"season-pack-insert",200);
 createButtons("season-pack-extra", seasonPackExtraKeys,true);
-createButtons("event-pack-buttons", eventPackKeys,false,"event-pack-insert",4);
+createButtons("event-pack-buttons", eventPackKeys,false,"event-pack-insert",200);
 
 // 更新插入文字區，帶自動換行
 function updateInsert(insertId,lineCount){
@@ -206,4 +206,5 @@ document.getElementById("copyBtn").onclick=()=>{
 </script>
 </body>
 </html>
+
 
