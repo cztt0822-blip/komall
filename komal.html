@@ -178,8 +178,8 @@ function updateInsert(insertId,lineCount){
   arrKeys.forEach(k=>{
     if(clickedKeys[k]){
       text+=k;
-      if(insertId=="season-insert") text+="·";
-      else text+="·";
+      if(insertId=="season-insert") text+="ㆍ";
+      else text+="ㆍ";
       lineCounter++;
       if(lineCount>0 && lineCounter>=lineCount){ text+="\n"; lineCounter=0; }
     }
@@ -206,3 +206,4 @@ document.getElementById("copyBtn").onclick=()=>{
 </script>
 </body>
 </html>
+
